@@ -19,7 +19,7 @@ jobs:
           aws-region: us-east-1
       - uses: pulumi/actions@v4
         with:
-          command: preview
+          command: up
           stack-name: lyoke101/TestProject1/Dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
